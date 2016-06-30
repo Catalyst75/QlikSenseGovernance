@@ -8,3 +8,4 @@ Follow the Instructions.pdf file to find out more information about this project
 ### Release History
  * v1 - Initial relase of the project
  * v1.1 - Added capability to pool the server apps impersonating it's users. This allows to get information about what the users can actually reach within the Sense Server environment, i.e: the user's personal apps in the "My Work" stream
+ * v1.2 - Added a new mode: "No Data". This mode allows to use Sense's 'Open Apps Without Data' feature, avoiding heavy RAM consumption for quick apps metadata update (such as master items, users objects, sheets, stories and bookmarks, etc.). When activated, no app datamodel information will be loaded.

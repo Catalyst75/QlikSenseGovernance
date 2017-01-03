@@ -10,6 +10,27 @@ Tested with Qlik Sense 3.1.3.
 
 Follow the Instructions.pdf file to find out more information about this project and how to try it yourself.
 
+## Some Screenshots
+#### Site overview
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%201.PNG "Site overview")
+#### Applications footprint
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%202.PNG "Applications footprint")
+#### Lineage
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%203.PNG "Lineage")
+#### Datamodel and field usage
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%204.PNG "Datamodel")
+#### Library components and usage
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%205.PNG "Library")
+#### Sheets and objects
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%206.PNG "Sheets")
+
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%207.PNG "Objects")
+#### Stories
+![alt text](https://github.com/rvspt/QlikSenseGovernance/blob/QlikSenseGovernance-v2/Images/Screenshot%208.PNG "Stories")
+
+
+
+
 ### Release History
  * v1 - Initial relase of the project
  * v1.1 - Added capability to pool the server apps impersonating it's users. This allows to get information about what the users can actually reach within the Sense Server environment, i.e: the user's personal apps in the "My Work" stream

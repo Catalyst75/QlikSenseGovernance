@@ -43,4 +43,4 @@ Node files:
 			 - a <application-id>_StorySlide_<story-id>_<slide-id>.xml file.
 			 - a <application-id>_StorySlideItems_<story-id>_<slide-id>.xml file. (represents all the items of a specific slide excelpt the snapshots)
 			 - a <application-id>_StorySnapshot_<story-id>_<slide-id>_<snapshot-id>.xml file.
-* lib/expr-fields.js - this is a promise that tries to parse expressions using 'lib/parse.js' and 'lib/qelParser.js'.
+* lib/expr-fields.js - this is a promise that tries to parse expressions using 'lib/parse.js' and 'lib/qelParser.js', both created by [pouc] (https://github.com/pouc).

@@ -2,9 +2,9 @@
 Project to help Administrators to understand a Qlik Sense Site composition. 
 
 Developed and focused in 3 major analysis vectors for Qlik Sense Administrators:
-* Application Structure and Reach i.e. sources, owners, fields transformations and lineage, size and footprint within the site including indentification of consuming users and their self-service creations
-* Performance i.e. application complexity, object rendering times and potential heavy calculated objects/sheets
-* Contents i.e. library items and their quality to improve self-service experience, objects and components labeling, applications institutional contents vs. users self-service creations
+* Application Structure and Reach, i.e. sources, owners, fields transformations and lineage, size and footprint within the site including indentification of consuming users and their self-service creations
+* Performance, i.e. application complexity, object rendering times and potential heavy calculated objects/sheets
+* Contents, i.e. library items and their quality to improve self-service experience, objects and components labeling, applications institutional contents vs. users self-service creations
 
 Tested with Qlik Sense 3.1.3.
 

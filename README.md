@@ -7,7 +7,7 @@ Developed and focused in 3 major analysis vectors for Qlik Sense Administrators:
 * Contents, i.e. library items and their quality to improve self-service experience, objects and components labeling, applications institutional contents vs. users self-service creations
 
 Tested with Qlik Sense 3.1.3.
-Follow the Instructions.pdf file to find out more information about this project and how to try it yourself.
+Follow the Instructions in the [Project Folder](https://github.com/rvspt/QlikSenseGovernance/tree/QlikSenseGovernance-v2/Project/Current%20Release%20-%20v2) to manually install this project.
 
 ## Release History
  * v1 - Initial relase of the project

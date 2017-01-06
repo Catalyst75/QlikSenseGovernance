@@ -182,7 +182,7 @@ if(!single_user)
 	var get_ulist_options = {
 	   hostname: server_address,
 	   port: 4242,
-	   path: '/qrs/user?xrfkey=abcdefghijklmnop',
+	   path: '/qrs/user?xrfkey=abcdefghijklmnop&filter=Inactive%20eq%20false',
 	   method: 'GET',
 	   headers: {
 	      'x-qlik-xrfkey' : 'abcdefghijklmnop',

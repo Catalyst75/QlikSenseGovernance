@@ -13,6 +13,7 @@ Node.js modules required to install (npm install <module> --save)
  * request
  * promise
  * js2xmlparser
+ * cli-spinner
 
 Other modules that can make the difference. These should not be required to install as they are in NodeJS core.
  * fs

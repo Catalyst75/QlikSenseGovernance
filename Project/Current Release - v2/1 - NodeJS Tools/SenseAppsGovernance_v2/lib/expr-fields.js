@@ -9,7 +9,7 @@ module.exports={
 				var expression_fields = qelParser.parse(expression);	
 			}
 			catch(err){
-				console.log("WARNING: I guess I am not ready yet for these expression functions. Share me with my creators please");
+				//console.log("WARNING: I guess I am not ready yet for these expression functions. Share me with my creators please");
 				cleanup_fields = false;
 				resolve({ expressionFields: "", expressionFieldsError: err.message });
 			}
@@ -107,7 +107,7 @@ module.exports={
 					parsed_dimensions.push(dimension_fields);
 					cleanup_fields = true;	
 				}catch(err){
-					console.log("WARNING: I guess I am not ready yet for these expression functions. Share me with my creators please");
+					//console.log("WARNING: I guess I am not ready yet for these expression functions. Share me with my creators please");
 					errors.push({non_parseable_dim: calculated_dimension, dimensionFieldsErrorMessage: err.message});
 					errors_parsing = true;
 				}

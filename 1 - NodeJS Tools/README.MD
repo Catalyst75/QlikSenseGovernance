@@ -1,33 +1,33 @@
 
-Certificates export in QMC
+### Certificates export in QMC
  * machine name
  * password (leave blank)
  * include secrets key
  * windows format
 
-Folder structure
+### Folder structure
  * create AppStructures or change destination folder name in scripts
 
-Node.js modules required to install (npm install <module> --save)
+### Node.js modules required to install (npm install <module> --save)
  * qsocks
  * request
  * promise
  * js2xmlparser
  * cli-spinner
 
-Other modules that can make the difference. These should not be required to install as they are in NodeJS core.
+### Other modules that can make the difference. These should not be required to install as they are in NodeJS core.
  * fs
  * require
 
 
-Command examples:
+### Command examples:
  * minimum to work: node apps-info.js -a SenseDemo -ud SenseDemo -un Sense
  * full specification: node apps-info.js -a SenseDemo -c "C:\Nodejs-projects\Apps-Governance\client.pfx" -ud SenseDemo -un Sense -o localhost -t
  * single app: node apps-info.js -a SenseDemo -ud SenseDemo -un Sense -s 1d0c97e5-5884-4bb6-b4f8-1c0ec385fcbf
  * only apps metadata: node apps-info.js -a SenseDemo -ud SenseDemo -un Sense -nd
  * importance of the '-t' flag: it allows to record time spent in each request to estimate objects rendering times
 
-Node files:
+### Node files:
  * apps-info.js - project executable with helper. Loads in sequence the files in 'lib'.
  * lib/app-list.js - gets the list of applications available in the server. Stores the DocumentsList.xml file.
  * lib/app-connections.js - gets the list of connections available to the user. Stores the DocumentsConnections.xml file.

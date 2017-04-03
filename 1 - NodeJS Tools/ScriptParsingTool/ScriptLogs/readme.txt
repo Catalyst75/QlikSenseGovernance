@@ -1,1 +1,0 @@
-Blank folder left in purpose. This is the destination of the script log files that ScriptParsingTool is looking as default.

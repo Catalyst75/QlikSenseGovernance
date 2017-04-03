@@ -1,1 +1,0 @@
-Blank folder left in purpose. This is the destination of the parsed CSV files.

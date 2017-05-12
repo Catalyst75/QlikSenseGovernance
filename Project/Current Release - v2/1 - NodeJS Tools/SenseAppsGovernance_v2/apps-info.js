@@ -59,7 +59,78 @@ cmd_args.forEach(function(val,index){
 	if(index!=0 && index!=1){
 		switch(val){
 			case '-h': 
-				helper();
+				console.log();
+				console.log("******************************************************");
+				console.log("    Welcome to the Applications Information Loader    ");
+				console.log("           for your Qlik Server Environment           ");
+				console.log("******************************************************");
+				console.log("              Configuration instructions              ");
+				console.log();
+				console.log("This tool requires the following information.");
+				console.log();
+				console.log("* Qlik Sense Server")
+				console.log("  -a: Qlik Sense Server address.")
+				console.log("      Default if unspecified: 'localhost'")
+				console.log();
+				console.log("  -c: Qlik Sense Server certificate location (at the ");
+				console.log("      moment it was only tested with blank password");
+				console.log("      certificates). If the path has spaces, indicate it");
+				console.log("      using double quotes.");
+				console.log("      Default if unspecified: file 'client.pfx' at root");
+				console.log("      folder of this tool")
+				console.log();
+				console.log();
+				console.log("* Root Admin")
+				console.log(" -ud: User Directory of the Qlik Sense Server Root Admin");
+				console.log("       to call the server API functions");
+				console.log("       This is mandatory.")
+				console.log();
+				console.log(" -un: User Name of the Qlik Sense Server Root Admin to");
+				console.log("       call the server API functions");
+				console.log("       This is mandatory.")
+				console.log();
+				console.log();
+				console.log("* Origin address for the request (this computer)")	
+				console.log("  -o: This is optional. Default value is 'localhost'. ");
+				console.log("      The origin specified needs an entry in the Whitelist");
+				console.log("      for the virtual proxy to allow websocket communication.");
+				console.log();
+				console.log();
+				console.log("* Additional Options")	
+				console.log("  -s: Single application mode.");
+				console.log("      Load information of only one application given it's ID.");
+				console.log("      Applications list and connections are still fully loaded.");
+				console.log();
+				console.log(" -su: Single user mode.");
+				console.log("      Load information only for the user specified as Root Admin.");
+				console.log();
+				console.log(" -nd: No data mode.");
+				console.log("      Load information without loading the data of the applications.");
+				console.log("      Warning: this mode cannot get file size and tables information.");
+				console.log("      Recommended use for refreshing application metadata only, i.e.");
+				console.log("      library items, users objects, sheets and stories, etc.");
+				console.log();
+				console.log("  -t: Timer mode on.");
+				console.log("      Stores timings for each components load. This features helps to");
+				console.log("      understand calculation times for all executed server(s) requests.");
+				console.log("      Warning: only use this feature right after an engine start or restart");
+				console.log("      to load accurate timings instead of timings based on cached results.");
+				console.log();
+				console.log("  -si: Silent mode on.");
+				console.log("      Turns off all console notifications during the execution. This feature ");
+				console.log("      is independent of 'Log' and 'Detailed Log' featues.");
+				console.log();
+				console.log("  -l: Log mode on.");
+				console.log("      Turns on general logging for fetched results and stores in the ");
+				console.log("      'Logs' folder, with execution time. Performance may be affected.");
+				console.log();
+				console.log("  -lf: Detailed Log mode on.");
+				console.log("      Turns on logging with debug level for fetched results and stores in the ");
+				console.log("      'Logs' folder, with execution time.");
+				console.log("      Warning: this mode has an intensive file writting and affects performance.");
+				console.log();
+				console.log("  -h: Launches this helper.");
+				process.exit();
 				break;
 			case '-a':
 				if(cmd_args[index+1]){

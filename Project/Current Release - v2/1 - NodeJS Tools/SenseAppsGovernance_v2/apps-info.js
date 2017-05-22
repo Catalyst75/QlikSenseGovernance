@@ -353,8 +353,14 @@ else{
 
 		https.get(get_ulist_options, function(res) {
 			if(logging.log_mode_full) log.debug("https.get successful - Retrieving identification of the site's application users", logging.log_file)
+
+			var message_body = '';
 		   	res.on("data", function(chunk) {
-		      var jsonified = JSON.parse(chunk);
+		   		message_body +=chunk;
+		   	});
+		   	// res.on("data", function(chunk) {
+		   	res.on("end", function() {
+		      var jsonified = JSON.parse(message_body);
 		      for (var i = 0; i < jsonified.length; i++){
 		         if(jsonified[i].userDirectory != 'INTERNAL' && !(jsonified[i].userDirectory.toUpperCase() == user_directory.toUpperCase() && jsonified[i].userId.toUpperCase() == user_name.toUpperCase())){
 		            users_list.push({userDirectory: jsonified[i].userDirectory, userId: jsonified[i].userId});
